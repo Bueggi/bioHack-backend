@@ -1,0 +1,23 @@
+{
+  "name": "biohack-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bueggi/bioHack-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bueggi/bioHack-backend/issues"
+  },
+  "homepage": "https://github.com/Bueggi/bioHack-backend#readme",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-body": "^4.0.4"
+  }
+}

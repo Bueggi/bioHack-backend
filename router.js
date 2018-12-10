@@ -1,12 +1,13 @@
 const Router = require('koa-router');
 const router = new Router();
+const userController = require('./controller/userController');
 
 router.get('/', (ctx, next) => {
   ctx.body = { hello: 'world' };
 });
 
 router.get('/getAllStats', (ctx, next) => {});
-router.get('/getSleepStats', (ctx, next) => {});
+router.get('/getSleepStats', userController.getSleepStats);
 router.get('/getRelaxStats', (ctx, next) => {});
 router.get('/getSocialStats', (ctx, next) => {});
 router.get('/getFoodStats', (ctx, next) => {});

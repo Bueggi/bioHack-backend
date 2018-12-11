@@ -16,4 +16,6 @@ const UserSchema = new Schema({
   likedTips: [ TipSchema ]
 });
 
-module.exports = UserSchema;
+const User = mongoose.model('User', UserSchema);
+
+module.exports = User;

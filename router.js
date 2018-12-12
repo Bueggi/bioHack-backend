@@ -23,6 +23,6 @@ router.post('/setSocialStats', (ctx, next) => {});
 router.post('/setFoodStats', (ctx, next) => {});
 router.post('/setSportStats', (ctx, next) => {});
 router.post('/addLikedTips', (ctx, next) => {});
-router.post('/setSleepStats', (ctx, next) => {});
+router.post('/setSleepStats', userController.setSleepStats);
 
 module.exports = router;

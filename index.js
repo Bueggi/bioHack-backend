@@ -9,8 +9,7 @@ const config = require('./config');
 const app = new koa();
 const port = process.env.PORT || 3001;
 
-app.use(cors()).use(bodyparser());
-app.use(router.routes());
+app.use(bodyparser()).use(cors()).use(router.routes());
 
 (async () => {
   await db
